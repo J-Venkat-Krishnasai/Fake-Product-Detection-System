@@ -60,24 +60,7 @@ side_image_tk = ImageTk.PhotoImage(side_image)
 side_label = Label(main, image=side_image_tk)
 side_label.image = side_image_tk  # Keep a reference to avoid garbage collection
 side_label.place(x=120, y=200)  # Adjust the position as needed
-'''
-side_image_path = "bg\\manufacturer-icon1.jpeg"
-side_image = Image.open(side_image_path)
-side_image = side_image.resize((100, 100), Image.Resampling.LANCZOS)  # Resize image if necessary
-side_image_tk = ImageTk.PhotoImage(side_image)
-side_label = Label(main, image=side_image_tk)
-side_label.image = side_image_tk  # Keep a reference to avoid garbage collection
-side_label.place(x=720, y=300) 
 
-
-side_image_path = "bg\\user-icon1.jpeg"
-side_image = Image.open(side_image_path)
-side_image = side_image.resize((100, 100), Image.Resampling.LANCZOS)  # Resize image if necessary
-side_image_tk = ImageTk.PhotoImage(side_image)
-side_label = Label(main, image=side_image_tk)
-side_label.image = side_image_tk  # Keep a reference to avoid garbage collection
-side_label.place(x=1020, y=300) 
-'''
 # Set the background color of the main window
 main.config(bg='cornflower blue')
 main.mainloop()
