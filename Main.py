@@ -12,25 +12,6 @@ main = Tk()
 main.geometry("1250x700+0+0")
 main.title("Fake Product Identification With QR-Code Using Blockchain")
 
-# Set the video background
-#video_name = "bg/home.mp4" 
-#video = imageio.get_reader(video_name)
-
-'''
-def stream(label):
-    while True:
-        for image in video.iter_data():
-            frame_image = ImageTk.PhotoImage(PIL.Image.fromarray(image))
-            label.config(image=frame_image)
-            label.image = frame_image
-
-my_label = tkinter.Label(main)
-my_label.pack()
-thread = threading.Thread(target=stream, args=(my_label,))
-thread.daemon = 1
-thread.start()
-'''
-
 # Define functions for the buttons
 def run1():
     main.after(10000, lambda: main.destroy())
